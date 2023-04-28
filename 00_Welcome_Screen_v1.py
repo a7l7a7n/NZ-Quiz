@@ -6,7 +6,7 @@ for the start of the quiz
 
 # Allows the welcome screen to have characters around the welcome text
 def formatter(symbol, text):
-    sides = symbol * 2
+    sides = symbol * 5
     formatter_text = f"{sides}, {text}, {sides}"
     top_bottom = symbol * len(formatter_text)
     return f"{top_bottom}\n{formatter_text}\n{top_bottom}"
