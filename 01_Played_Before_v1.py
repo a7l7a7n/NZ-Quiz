@@ -2,7 +2,7 @@
 This program is the first version that asks the user if they have played before
 """
 
-instructions = input("Have you played The NZ Quiz before? (Yes or No): ")
+instructions = input("Do you want to see the instructions to the Quiz: ")
 
 # If they say yes, skip instructions
 if instructions == 'Yes':

@@ -26,6 +26,6 @@ def yes_no(question_text):
 
 
 # Main Routine:
-answer_ = yes_no("Have you played The NZ Quiz before?: ")
-print(f"You have entered '{answer_}'")
+instructions = input("Do you want to see the instructions to the Quiz: ")
+print(f"You have entered '{instructions}'")
 print()

@@ -3,7 +3,7 @@ This program is the second version that changes the code to allow for 'n' and 'y
 instead of yes or no
 """
 
-instructions = input("Have you played The NZ Quiz before? (Yes or No): ")
+instructions = input("Do you want to see the instructions to the Quiz: ")
 
 # If they say yes, skip instructions
 if instructions == 'Yes' or instructions == 'y':
