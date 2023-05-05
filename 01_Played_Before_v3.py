@@ -22,7 +22,7 @@ def yes_no(question_text):
         # Else, re-enter question
         else:
             print("Please answer 'yes' or 'no'")
-            print(yes_no("Have you played The NZ Quiz before?"))
+            print(yes_no("Do you want to see the instructions to the Quiz: "))
 
 
 # Main Routine:

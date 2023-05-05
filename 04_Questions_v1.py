@@ -25,7 +25,7 @@ def user_answer_1(question_text):
 def user_answer_2(question_text):
     while True:
         question2 = input(question_text).lower()
-        # If the user guesses 14 they are right otherwise they are wrong or have to re-enter the question
+        # If the user guesses 19 they are right otherwise they are wrong or have to re-enter the question
         if question2 == '19':
             print("Correct, Good job!")
         elif question2 == '18' or '16' or '17':
@@ -43,7 +43,7 @@ def user_answer_2(question_text):
 def user_answer_3(question_text):
     while True:
         question3 = input(question_text).lower()
-        # If the user guesses 14 they are right otherwise they are wrong or have to re-enter the question
+        # If the user guesses 2 they are right otherwise they are wrong or have to re-enter the question
         if question3 == '2':
             print("Correct, Good job!")
         elif question3 == '1' or '3' or '4':
@@ -56,6 +56,24 @@ def user_answer_3(question_text):
                     "c) 3\n"
                     "d) 4\n")
             return question3
+
+
+def user_answer_4(question_text):
+    while True:
+        question4 = input(question_text).lower()
+        # If the user guesses 14 they are right otherwise they are wrong or have to re-enter the question
+        if question4 == '2':
+            print("Correct, Good job!")
+        elif question4 == '1' or '3' or '4':
+            print("Incorrect, rua is 2")
+        else:
+            print("Invalid number, please try again")
+            print("What is the english number for 'tekau mā iwa?"
+                    "a) 1\n"
+                    "b) 2\n"
+                    "c) 3\n"
+                    "d) 4\n")
+            return question4
 
 
 # Main Routine
