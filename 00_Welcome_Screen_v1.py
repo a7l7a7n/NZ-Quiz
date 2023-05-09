@@ -15,4 +15,3 @@ def formatter(symbol, text):
 # Main routine
 print(formatter("🥝", "Welcome to The NZ QUIZ for Kiwis"))
 print()
-

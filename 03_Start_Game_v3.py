@@ -1,5 +1,5 @@
-"""Start game v2
-This program fixes the problems in the last version
+"""Start game v3
+This code makes sure that if the user doesn't enter a valid input, the question is re - entered
 """
 
 
@@ -11,9 +11,10 @@ def start(question_text):
         if play == 'nz':
             print("Program starts")
             return play
-        # Anything else
+        # Anything else then the question is re - entered
         else:
-            print("Error")
+            print("error, invalid input detected")
+            print(start("Please enter 'NZ' to start: "))
             return play
 
 
