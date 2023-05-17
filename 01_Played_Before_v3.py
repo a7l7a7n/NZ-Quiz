@@ -4,28 +4,34 @@ only be broken by answering yes or no
 """
 
 
+# Function
+def instructions():
+    print("🥝🥝🥝🥝🥝 NZ Quiz Instructions 🥝🥝🥝🥝🥝\n"
+                "The NZ Quiz is a 10 question quiz where you \n"
+                "are asked questions regarding Maori number \n"
+                "from 0 to 20")
+
+
 # Function:
 def yes_no(question_text):
     while True:
         # Ask user if they have played before
-        answer = input(question_text).lower()
-        # If they say yes, skip instructions
+        answer = instructions_.lower()
+        # If they say yes, print instructions
         if answer == 'yes' or answer == 'y':
-            answer = 'yes'
-            print("Program continues")
-            return answer
-        # If no, provide instructions
+            print(instructions)
+        # If no, program continues
         elif answer == 'no' or answer == 'n':
-            answer = 'no'
-            print("Show instructions")
-            return answer
+            print("Program continues")
         # Else, re-enter question
         else:
             print("Please answer 'yes' or 'no'")
-            print(yes_no("Do you want to see the instructions to the Quiz: "))
+            print(yes_no("Do you want to see the instructions to the NZ Quiz: "))
 
 
 # Main Routine:
-instructions = input("Do you want to see the instructions to the Quiz: ")
-print(f"You have entered '{instructions}'")
-print()
+instructions_ = input("Do you want to see the instructions to the Quiz: ")
+if instructions_ == "yes" or instructions_ == "y":
+    instructions()
+else:
+    print()
