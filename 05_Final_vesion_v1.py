@@ -40,7 +40,7 @@ def yes_no(question_text):
         # Else, re-enter question
         else:
             print("Please answer 'yes' or 'no'")
-            print(yes_no("Have you played The NZ Quiz before?"))
+            yes_no("Do you want to play the NZ Quiz?")
 
 
 # Function
@@ -112,6 +112,9 @@ print(formatter("🥝", "Welcome to The NZ QUIZ for Kiwis"))
 print()
 
 answer_ = yes_no("Do you want to play the NZ Quiz?: ")
+if answer_ == "no" or answer_ == "n":
+    print("Goodbye, and have a good day")
+    exit()
 
 instructions_ = input("Do you want to see the instructions to the Quiz: ")
 if instructions_ == "yes" or instructions_ == "y":
